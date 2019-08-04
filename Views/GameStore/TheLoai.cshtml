@@ -1,0 +1,10 @@
+﻿@model  IEnumerable<Webbangame.Models.THE_LOAI>
+ <p class="lead">Thể loại Game</p>
+ <div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("SPTheoTheLoai","GameStore",new {a=item.MaTheLoai })" class="list-group-item">
+            @item.TenTheLoai
+        </a>    
+    }
+</div>

@@ -1,0 +1,19 @@
+﻿@model  IEnumerable<Webbangame.Models.LIEN_HE>
+<p class="lead"></p>
+
+    <div class="list-group">
+        @foreach (var item in Model)
+        {
+
+             <a href="@Url.Action("ThongtinLH","GameStore")" class="list-group-item" >
+                 <span class="glyphicon glyphicon-home"> </span>
+                    @item.DC
+                   
+               <span class="glyphicon glyphicon-phone-alt"> </span>
+               @item.SĐT
+           </a>
+               
+
+
+        }
+    </div>
